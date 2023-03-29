@@ -3,11 +3,11 @@
 import GalleryItem from './GalleryItem'
 
 const Gallery = (props) => {
-    // const data = useContext(DataContext)
+    const data = props.data.result.read()
 
-    const display = props.data.map((item, index) => {
+    const display = data.map((item, index) => {
         return (
-            <GalleryItem key={index} item={item} />
+            <GalleryItem item={item} key={index} />
         )
     })
 
@@ -17,6 +17,7 @@ const Gallery = (props) => {
         </div>
     )
 }
+
 
 
 export default Gallery
