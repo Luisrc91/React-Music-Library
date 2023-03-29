@@ -5,6 +5,9 @@ import SearchBar from './components/SearchBar'
 import AlbumView from './components/AlbumView'
 import ArtistView from './components/ArtistView'
 import { Fragment } from 'react'
+// import { useNavigate } from 'react-router-dom'
+
+ 
 
 function App() {
     let [search, setSearch] = useState('')
